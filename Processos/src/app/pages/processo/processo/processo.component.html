@@ -1,0 +1,46 @@
+<app-cabecalho></app-cabecalho>
+<div class="card">
+<div class="card-header text-center">
+  <h4> Cadastrar processo</h4>
+</div>
+
+<div class="card-body border border-warning">
+  <form>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Nome do cliente</label>
+        <input type="text" class="form-control" id="nomeCliente" placeholder="Nome completo">
+      </div>
+      <div class="form-group col-md-6">
+        <label>Número do processo</label>
+        <input type="text" class="form-control" id="numProcesso" placeholder="Somente números">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Data da decisão</label>
+        <input type="text" class="form-control" id="dataDecisao" placeholder="DD/MM/AAAA">
+      </div>
+      <div class="form-group col-md-6">
+        <label>Link do processo</label>
+        <input type="text" class="form-control" id="linkProcesso" placeholder="https://www.link.com.br/">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Descrição</label>
+      <textarea class="form-control" id="descricao" placeholder="Análise do processo" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Próxima etapa</label>
+      <textarea class="form-control" id="proximoPasso" placeholder="Somente números" rows="3"></textarea>
+    </div>
+    <div class="card-footer">
+      <button type="submit" class="btn btn-warning float-right">Concluído</button>
+    </div>
+
+  </form>
+</div>

@@ -1,28 +1,19 @@
-<body class="background">
-  <form  role="form" id="quickForm">
-	<div class="login">
-
-		<div class="login-screen">
-      <img class="logo"  width="100px" src="../../../assets/img/Logo.png">
-			<div class="app-title">
-				<h2> FAÇA DIREITO </h2>
-			</div>
-
-			<div class="login-form">
-				<div class="control-group">
-				<input formControlName="email" type="text" class="login-field" value="" placeholder="E-mail" id="login-name">
-				<label class="login-field-icon fui-user" for="login-name"></label>
-				</div>
-
-				<div class="control-group">
-				<input formControlName="senha" type="password" class="login-field" value="" placeholder="Senha" id="login-pass">
-				<label class="login-field-icon fui-lock" for="login-pass"></label>
-				</div>
-        <a class="btn btn-primary btn-large btn-block" [routerLink]  >Entrar</a><br/><br/>
-        <a class="novaconta" [routerLink]="['/professor']" >Criar conta</a>
-      </div>
+<body class="text-center">
+  <form class="form-signin border border-warning rounded">
+      <img class="mb-4" src="../../../assets/img/logo.svg" alt="" width="72" height="72">
+      <div class="form-group">
+        <h3>Faça login</h3>
     </div>
-  </div>
 
-</form>
+      <div class="form-group">
+          <input type="email" id="email" class="form-control" placeholder="Email" required autofocus>
+      </div>
+
+      <div class="form-group">
+          <input type="password" id="password" class="form-control" placeholder="Senha" required>
+      </div>
+
+      <a type="button" [routerLink]="['/tipo-Usuario']" class="btn btn-outline-info btn-lg">Cadastrar</a>
+      <a [routerLink]="['/menu']"  class="btn btn-outline-warning btn-lg l">Acessar</a>
+  </form>
 </body>

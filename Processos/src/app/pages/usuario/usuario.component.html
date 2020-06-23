@@ -1,1 +1,31 @@
-<p>usuario works!</p>
+<body class="text-center">
+  <form [formGroup]="usuarioForm" class="form-signin border border-warning rounded">
+      <img class="mb-4" src="../../../assets/img/logo.svg" alt="" width="72" height="72">
+      <div class="form-group">
+        <h3>Cadastre-se</h3>
+    </div>
+
+      <div class="form-group">
+          <input formControlName="nome" type="text" id="nome" class="form-control" placeholder="Nome" required autofocus>
+      </div>
+      <div class="form-group">
+        <input formControlName="sobreNome" type="text" id="sobreNome" class="form-control" placeholder="Sobrenome" required autofocus>
+    </div>
+      <div class="form-group">
+          <input formControlName="email" type="email" id="email" class="form-control" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <input formControlName="dtNascimento" type="text" id="dtNascimento" placeholder="Data nascimento" class="form-control"onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required>
+      </div>
+      <div class="form-group">
+          <input formControlName="senha" type="password" id="password" class="form-control" placeholder="Senha" required>
+      </div>
+
+      <div class="form-group">
+          <input formControlName="confirmarSenha"  type="password" id="password" class="form-control" placeholder="Repita a senha" required>
+      </div>
+
+      <a  [routerLink]="['/login']" type="button" class="btn btn-outline-info btn-lg">Login</a>
+      <a [routerLink] (click)="salvar()" class="btn btn-outline-warning btn-lg l">Conluído</a>
+  </form>
+</body>
