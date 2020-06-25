@@ -23,11 +23,19 @@
           </a>
         </li>
 
+
+
+      </ul>
+
+      <ul class="nav justify-content-md">
+        <li class="nav-item">
+          <h6>Bem vindo: {{usuario.nome + " "}} {{usuario.sobreNome}}</h6>
+         </li>
       </ul>
 
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link" >Sair</a>
+          <a [routerLink] class="sair" (click)="Logout()" ><i class="icon-logout"></i></a>
         </li>
       </ul>
   </div>

@@ -31,7 +31,7 @@ export class UsuarioComponent implements OnInit {
     dtNascimento: '',
     email: '',
     senha: '',
-    tipoUsuario: 0
+    eTipoUsuario: 0
   };
 
   constructor(private router: Router,
@@ -60,7 +60,7 @@ export class UsuarioComponent implements OnInit {
       dtNascimento: this.usuarioForm.get('dtNascimento').value,
       email: this.usuarioForm.get('email').value,
       senha: this.usuarioForm.get('senha').value,
-      tipoUsuario: Number.parseInt(this.id)
+      eTipoUsuario: Number.parseInt(this.id)
 
     });
 

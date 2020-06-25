@@ -5,7 +5,7 @@ export interface Usuario {
   dtNascimento: string;
   email: string;
   senha: string;
-  tipoUsuario: number;
+  eTipoUsuario: number;
 
 }
 

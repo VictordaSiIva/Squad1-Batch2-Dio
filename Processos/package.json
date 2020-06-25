@@ -24,6 +24,7 @@
     "angular-datatables": "^9.0.2",
     "datatables.net": "^1.10.21",
     "datatables.net-dt": "^1.10.21",
+    "guid-typescript": "^1.0.9",
     "jquery": "^3.5.1",
     "ngx-toastr": "^12.1.0",
     "rxjs": "~6.5.4",

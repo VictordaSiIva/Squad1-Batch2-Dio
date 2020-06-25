@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../../environments/environment';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
-import { Usuario } from 'src/app/shared/usuario.interfaces';
+import { Usuario, Login } from 'src/app/shared/usuario.interfaces';
 
 const options = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -16,12 +16,12 @@ export class UsuarioService {
 
   constructor(private http: HttpClient) { }
 
-  getProcessos(): Observable<Usuario[]> {
+  getUsers() {
     return this.http.get<Usuario[]>(`${environment.apiUrl}/usuario`, options)
       .pipe(tap(data => data))
   }
 
-  getProcesso(id: string): Observable<Usuario> {
+  getUser(id: string): Observable<Usuario> {
     return this.http.get<Usuario>(`${environment.apiUrl}/usuario/${id}`, options)
       .pipe(tap(data => data))
   }
@@ -42,4 +42,10 @@ export class UsuarioService {
     return this.http.delete(`${environment.apiUrl}/usuario/${id}`, options)
 
   }
+
+  fazerLogin(login: Login) {
+    return this.http.post<Login>(`${environment.apiUrl}/api/login`, login,  options)
+      .pipe(tap(data => data))
+  }
+
 }
