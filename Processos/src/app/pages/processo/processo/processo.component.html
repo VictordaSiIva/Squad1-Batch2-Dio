@@ -13,22 +13,18 @@
         <div class="input-group">
           <select formControlName="nomeCliente" class="form-control"  >
             <option value="" selected disabled></option>
-              <option *ngFor="let cliente of clientes" [value]="cliente.nome" >
-                {{cliente.nome}}
+              <option *ngFor="let cliente of clientes" [value]="cliente.nome +' ' + cliente.sobreNome" >
+                {{cliente.nome+ " "}}{{cliente.sobreNome}}
             </option>
         </select>
         </div>
       </div>
-      <!-- <div class="form-group col-md-6">
-        <label>Número do processo</label>
-        <input type="text" class="form-control" id="numProcesso" placeholder="Somente números">
-      </div> -->
     </div>
 
     <div class="form-row">
       <div class="form-group col-md-6">
         <label>Data da decisão</label>
-        <input formControlName="dataDecisao" type="date" class="form-control" id="dataDecisao" placeholder="DD/MM/AAAA">
+        <input formControlName="dataDecisao" type="date" data-inputmask-alias="datetime" data-inputmask-inputformat="dd-mm-yyyy" data-mask class="form-control" id="dataDecisao" >
       </div>
       <div class="form-group col-md-6">
         <label>Link do processo</label>

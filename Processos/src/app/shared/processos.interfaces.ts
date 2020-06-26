@@ -1,9 +1,9 @@
 export interface Processos {
- Id: string;
- NomeCliente: string;
- NumProcesso: string;
- DataDecisao: string;
- Descricao: string;
- ProximoPasso: string;
- LinkProcesso: string;
+ id: string;
+ nomeCliente: string;
+ numProcesso: string;
+ dataDecisao: string;
+ descricao: string;
+ proximoPasso: string;
+ linkProcesso: string;
 }

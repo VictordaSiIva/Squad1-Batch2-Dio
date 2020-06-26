@@ -3,6 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Guid } from 'guid-typescript';
+import { DatePipe } from '@angular/common';
 
 
 import { takeUntil } from 'rxjs/operators';
@@ -28,13 +29,13 @@ export class ProcessoComponent implements OnInit {
   regex: any = /^$|\s+/ ;
 
   processo: Processos = {
-    Id: '',
-    NomeCliente: '',
-    NumProcesso: '',
-    DataDecisao: '',
-    Descricao: '',
-    ProximoPasso: '',
-    LinkProcesso: '',
+    id: '',
+    nomeCliente: '',
+    numProcesso: '',
+    dataDecisao: '',
+    descricao: '',
+    proximoPasso: '',
+    linkProcesso: '',
 
   };
 
@@ -42,7 +43,8 @@ export class ProcessoComponent implements OnInit {
               private route: ActivatedRoute,
               private service: ProcessosService,
               private Service: UsuarioService,
-              private toastr: ToastrService) { }
+              private toastr: ToastrService,
+              private datePipe: DatePipe) { }
 
   ngOnInit(): void {
     this.getClientes();
@@ -54,12 +56,31 @@ export class ProcessoComponent implements OnInit {
       linkProcesso: new FormControl(null)
     });
 
-    const id = this.route.snapshot.params.id;
+    const id = this.route.snapshot.params["id"];
 
     if (id)
     {
-
+      this.getProcesso(id);
     }
+
+  }
+
+  getProcesso(id: string) {
+    this.service.getProcesso(id)
+      .subscribe(response => {
+         const data = response;
+         this.processo = JSON.parse(JSON.stringify(response))
+
+         this.ProcessoForm.controls['nomeCliente'].setValue(this.processo.nomeCliente)
+         this.ProcessoForm.controls['dataDecisao'].setValue(this.datePipe.transform(this.processo.dataDecisao,'yyyy-MM-dd'))
+         this.ProcessoForm.controls['descricao'].setValue(this.processo.descricao)
+         this.ProcessoForm.controls['proximoPasso'].setValue(this.processo.proximoPasso)
+         this.ProcessoForm.controls['linkProcesso'].setValue(this.processo.linkProcesso)
+
+      }, err => {
+
+      });
+
 
   }
 
@@ -78,22 +99,22 @@ export class ProcessoComponent implements OnInit {
 
   salvar() {
 
-    if (!this.processo.Id) {
+    if (!this.processo.id) {
       this.processo = Object.assign({}, {
-        Id: '',
-        NomeCliente: this.ProcessoForm.get('nomeCliente').value,
-        NumProcesso: Guid.create().toString().substr(0, 6).toUpperCase(),
-        DataDecisao: this.ProcessoForm.get('dataDecisao').value,
-        Descricao: this.ProcessoForm.get('descricao').value,
-        ProximoPasso: this.ProcessoForm.get('proximoPasso').value,
-        LinkProcesso: this.ProcessoForm.get('linkProcesso').value,
+        id: '',
+        nomeCliente: this.ProcessoForm.get('nomeCliente').value,
+        numProcesso: Guid.create().toString().substr(0, 6).toUpperCase(),
+        dataDecisao: this.ProcessoForm.get('dataDecisao').value,
+        descricao: this.ProcessoForm.get('descricao').value,
+        proximoPasso: this.ProcessoForm.get('proximoPasso').value,
+        linkProcesso: this.ProcessoForm.get('linkProcesso').value,
       });
     } else {
-      this.processo.NomeCliente = this.ProcessoForm.get('nomeCliente').value;
-      this.processo.DataDecisao = this.ProcessoForm.get('dataDecisao').value;
-      this.processo.Descricao = this.ProcessoForm.get('descricao').value;
-      this.processo.ProximoPasso = this.ProcessoForm.get('proximoPasso').value;
-      this.processo.NomeCliente = this.ProcessoForm.get('linkProcesso').value;
+      this.processo.nomeCliente = this.ProcessoForm.get('nomeCliente').value;
+      this.processo.dataDecisao = this.ProcessoForm.get('dataDecisao').value;
+      this.processo.descricao = this.ProcessoForm.get('descricao').value;
+      this.processo.proximoPasso = this.ProcessoForm.get('proximoPasso').value;
+      this.processo.linkProcesso = this.ProcessoForm.get('linkProcesso').value;
 
 
     }
@@ -109,14 +130,14 @@ export class ProcessoComponent implements OnInit {
 
     this.router.navigateByUrl('/processos').then(e => {
         if (e ) {
-          if (this.processo.Id === '')
+          if (this.processo.id === '')
           {
-            this.toastr.success('Aluno cadastrado com sucesso!', 'Aluno');
+            this.toastr.success('Processo cadastrado com sucesso!');
 
           }
           else
           {
-            this.toastr.success('Aluno atualizado com sucesso!', 'Aluno');
+            this.toastr.success('Processo atualizado com sucesso!');
           }
           console.log('Navigation is successful!');
         } else {

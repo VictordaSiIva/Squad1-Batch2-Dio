@@ -21,7 +21,7 @@ export class ProcessosService {
       .pipe(tap(data => data))
   }
 
-  getProcesso(id: string): Observable<Processos> {
+  getProcesso(id: string) {
     return this.http.get<Processos>(`${environment.apiUrl}/processo/${id}`, options)
       .pipe(tap(data => data))
   }
@@ -29,7 +29,7 @@ export class ProcessosService {
   salvar(processo: Processos): Observable<any> {
 
 
-    if (processo.Id === '') {
+    if (processo.id === '') {
       return this.http.post(`${environment.apiUrl}/processo`, processo, options)
       .pipe(tap(data => { data }))
     } else {

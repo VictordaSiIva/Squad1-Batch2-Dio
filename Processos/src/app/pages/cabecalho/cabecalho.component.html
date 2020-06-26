@@ -5,7 +5,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-        <li class="nav-item">
+        <li *ngIf="tipoUsuario === 1" class="nav-item">
           <a [routerLink]="['/processo']" class="nav-link" >
             Cadastrar
           </a>
