@@ -1,3 +1,11 @@
 td{
-  color: black;
+  color: #c1c1c1;
+  background-color: #0A092F;
+  border:none
+}
+
+th {
+  background-color: #EAB552 ;
+  color: #0A092F;
+  border:none
 }

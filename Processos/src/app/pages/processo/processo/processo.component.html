@@ -1,10 +1,10 @@
 <app-cabecalho></app-cabecalho>
-<div class="card">
-<div class="card-header text-center">
-  <h4> Cadastrar processo</h4>
-</div>
 
-<div class="card-body border border-warning">
+  <div style="background-color: #0D0C3B ; margin-right: 5%;" class="card-header text-center">
+  <h4 style="color: #9dbbae;"> Cadastrar processo</h4>
+</div> <br>
+
+<div  class="b">
   <form [formGroup]="ProcessoForm">
 
     <div class="form-row f">
@@ -39,11 +39,13 @@
 
     <div class="form-group">
       <label>Próxima etapa</label>
-      <textarea formControlName="proximoPasso" class="form-control" id="proximoPasso" placeholder="Somente números" rows="3"></textarea>
+      <textarea formControlName="proximoPasso" class="form-control" id="proximoPasso" rows="3"></textarea>
     </div>
     <div class="card-footer">
-      <button (click)="salvar()" type="submit" class="btn btn-warning float-right">Concluído</button>
+      <button (click)="salvar()" type="submit"  style="background-color: #ffbd4a; font-weight: bolder;" class="btn btn-warning float-right">Concluído</button>
     </div>
 
   </form>
 </div>
+
+

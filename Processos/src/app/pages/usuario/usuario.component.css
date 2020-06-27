@@ -15,7 +15,7 @@ body {
   justify-content: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #202341;
+  background-color: #0d0c3b;
   color: white;
 }
 
@@ -38,4 +38,23 @@ body {
 
 .l{
   margin-left: 10px;
+}
+
+
+input{
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+input:not(:hover ){
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+input:hover {
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
 }

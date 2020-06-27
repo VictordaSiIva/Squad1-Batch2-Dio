@@ -53,6 +53,14 @@ export class UsuarioComponent implements OnInit {
 
   salvar() {
 
+    const senha = this.usuarioForm.get('senha').value;
+    const Csenha = this.usuarioForm.get('confirmarSenha').value;
+    if(senha !== Csenha  || (Csenha === null || senha === null))
+
+    {
+      this.toastr.error('senhas não se coincidem ou então inválidas');
+      return
+    }
     this.Usuario = Object.assign({}, {
       id: '',
       nome: this.usuarioForm.get('nome').value,
@@ -63,6 +71,26 @@ export class UsuarioComponent implements OnInit {
       eTipoUsuario: Number.parseInt(this.id)
 
     });
+
+    let valNome, valsobreNome, valdtNascimento, valEmail;
+
+    valNome = this.regex.test(this.Usuario.nome);
+    valsobreNome = this.regex.test(this.Usuario.sobreNome);
+    valEmail = this.regex.test(this.Usuario.email);
+    valdtNascimento = this.regex.test(this.Usuario.dtNascimento);
+
+    if(valNome === true ||
+      this.Usuario.nome === null ||
+      valsobreNome === true ||
+      this.Usuario.sobreNome == null ||
+      valEmail === true ||
+      this.Usuario.email === null ||
+      valdtNascimento === true ||
+      this.Usuario.dtNascimento === null )
+    {
+      this.toastr.error('Campos inválidos ou vazios.');
+      return;
+    }
 
     this.usuarioService.salvar(this.Usuario)
       .pipe(takeUntil(this.ngGetUsuarioUnsubscribe))

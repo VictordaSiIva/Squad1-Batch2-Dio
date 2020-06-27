@@ -2,3 +2,72 @@
  margin-left: 30%;
  text-align: center;
 }
+.b {
+  padding: 2%;
+  border-color: #0D0C3B;
+  background-color: #0d0c3b;
+}
+label {
+  color: #ffbd4a;
+}
+
+textarea {
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+input{
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+input:not(:hover ){
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+input:hover {
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+textarea:hover {
+  background-color: #232129;
+  color: #F4EDE8;
+}
+
+textarea:not(:hover ){
+  background-color: #232129;
+  color: #F4EDE8;
+ }
+
+select:hover  {
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+select:not(:hover )  {
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+select {
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+option{
+  color: #F4EDE8;
+  border: none;
+  background-color: #232129;
+}
+
+
+
