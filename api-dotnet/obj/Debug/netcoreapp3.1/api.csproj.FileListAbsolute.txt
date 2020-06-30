@@ -1,0 +1,114 @@
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/appsettings.json
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/api
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/api.deps.json
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/api.runtimeconfig.json
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/api.runtimeconfig.dev.json
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/api.dll
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/api.pdb
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/DnsClient.dll
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll
+/home/alex/meus-projetos/squad1-batch2/api/bin/Debug/netcoreapp3.1/SharpCompress.dll
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.csprojAssemblyReference.cache
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.AssemblyInfoInputs.cache
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.AssemblyInfo.cs
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.csproj.CoreCompileInputs.cache
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.MvcApplicationPartsAssemblyInfo.cache
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.RazorTargetAssemblyInfo.cache
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.csproj.CopyComplete
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/staticwebassets/api.StaticWebAssets.Manifest.cache
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/staticwebassets/api.StaticWebAssets.xml
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.dll
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.pdb
+/home/alex/meus-projetos/squad1-batch2/api/obj/Debug/netcoreapp3.1/api.genruntimeconfig.cache
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/appsettings.json
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/api
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/api.deps.json
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/api.runtimeconfig.json
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/api.runtimeconfig.dev.json
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/api.dll
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/api.pdb
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/DnsClient.dll
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/MongoDB.Bson.dll
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/MongoDB.Driver.dll
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/MongoDB.Driver.Core.dll
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/MongoDB.Libmongocrypt.dll
+/home/alex/meus-projetos/api-dotnet/bin/Debug/netcoreapp3.1/SharpCompress.dll
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.csprojAssemblyReference.cache
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.AssemblyInfoInputs.cache
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.AssemblyInfo.cs
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.csproj.CoreCompileInputs.cache
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.MvcApplicationPartsAssemblyInfo.cache
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.RazorTargetAssemblyInfo.cache
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.csproj.CopyComplete
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/staticwebassets/api.StaticWebAssets.Manifest.cache
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/staticwebassets/api.StaticWebAssets.xml
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.dll
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.pdb
+/home/alex/meus-projetos/api-dotnet/obj/Debug/netcoreapp3.1/api.genruntimeconfig.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\api.exe
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\api.deps.json
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\api.runtimeconfig.json
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\api.runtimeconfig.dev.json
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\api.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\api.pdb
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.csprojAssemblyReference.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.AssemblyInfoInputs.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.AssemblyInfo.cs
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.RazorTargetAssemblyInfo.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.csproj.CopyComplete
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\staticwebassets\api.StaticWebAssets.Manifest.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\staticwebassets\api.StaticWebAssets.xml
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.pdb
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.genruntimeconfig.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.csproj.CoreCompileInputs.cache
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Victor da Silva\Desktop\api-dotnet\obj\Debug\netcoreapp3.1\api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\api.exe
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\api.deps.json
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\api.runtimeconfig.json
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\api.runtimeconfig.dev.json
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\api.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\api.pdb
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\DnsClient.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Bson.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Driver.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Driver.Core.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\MongoDB.Libmongocrypt.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\SharpCompress.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.csprojAssemblyReference.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.AssemblyInfoInputs.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.AssemblyInfo.cs
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.csproj.CoreCompileInputs.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.RazorTargetAssemblyInfo.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.csproj.CopyComplete
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\staticwebassets\api.StaticWebAssets.Manifest.cache
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\staticwebassets\api.StaticWebAssets.xml
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.dll
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.pdb
+C:\Users\Victor da Silva\Desktop\Squad1-Batch2-Dio\api-dotnet\obj\Debug\netcoreapp3.1\api.genruntimeconfig.cache
