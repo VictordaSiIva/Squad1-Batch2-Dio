@@ -29,7 +29,7 @@ namespace Api.Controllers
                 dto.Nome,
                 dto.SobreNome,
                 dto.Senha,
-                dto.DataNascimento,
+                dto.DtNascimento,
                 dto.Email,
                 dto.ETipoUsuario
             );
@@ -63,8 +63,8 @@ namespace Api.Controllers
             .Where(_ => _.Id == dto.Id),
             Builders<Usuario>.Update.Set("nome", dto.Nome)
                                     .Set("sobreNome", dto.SobreNome)
-                                    .Set("password", dto.Senha)
-                                    .Set("dataNascimento", dto.DataNascimento)
+                                    .Set("senha", dto.Senha)
+                                    .Set("dtNascimento", dto.DtNascimento)
                                     .Set("email", dto.Email));
             
             

@@ -8,6 +8,7 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { UsuarioService } from 'src/app/services/usuario/usuario.service';
 import { Usuario } from 'src/app/shared/usuario.interfaces';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
@@ -23,6 +24,7 @@ export class UsuarioComponent implements OnInit {
 
   usuarioForm: FormGroup;
   id: any
+  Id: any
 
   Usuario: Usuario = {
     id: '',
@@ -37,6 +39,7 @@ export class UsuarioComponent implements OnInit {
   constructor(private router: Router,
               private route: ActivatedRoute,
               private usuarioService: UsuarioService,
+              private datePipe: DatePipe,
               private toastr: ToastrService) { }
 
   ngOnInit(): void {
@@ -48,8 +51,32 @@ export class UsuarioComponent implements OnInit {
       senha: new FormControl(null),
       confirmarSenha: new FormControl(null)
     });
-    this.id = this.route.snapshot.params['id'];
+    this.id = this.route.snapshot.params.id;
+    this.Id = this.route.snapshot.params.Id;
+
+    if(this.Id)
+    {
+      this.getUsuario(this.Id);
+    }
   }
+
+  getUsuario(id: string) {
+    this.usuarioService.getUser(id)
+      .subscribe(response => {
+         const data = JSON.parse(JSON.stringify(response))
+         this.Usuario = JSON.parse(JSON.stringify(response))
+
+         this.usuarioForm.controls.nome.setValue(this.Usuario.nome)
+         this.usuarioForm.controls.sobreNome.setValue(this.Usuario.sobreNome)
+         this.usuarioForm.controls.dtNascimento.setValue(this.datePipe.transform(this.Usuario.dtNascimento,'dd/MM/yyyy'))
+         this.usuarioForm.controls.email.setValue(this.Usuario.email)
+
+
+      }, err => {
+
+      });
+    }
+
 
   salvar() {
 
@@ -61,6 +88,9 @@ export class UsuarioComponent implements OnInit {
       this.toastr.error('senhas não se coincidem ou então inválidas');
       return
     }
+
+    if(!this.Id)
+    {
     this.Usuario = Object.assign({}, {
       id: '',
       nome: this.usuarioForm.get('nome').value,
@@ -71,6 +101,16 @@ export class UsuarioComponent implements OnInit {
       eTipoUsuario: Number.parseInt(this.id)
 
     });
+  }
+  else{
+
+      this.Usuario.nome = this.usuarioForm.get('nome').value;
+      this.Usuario.sobreNome = this.usuarioForm.get('sobreNome').value;
+      this.Usuario.dtNascimento = this.usuarioForm.get('dtNascimento').value;
+      this.Usuario.email = this.usuarioForm.get('email').value;
+      this.Usuario.senha = this.usuarioForm.get('senha').value;
+
+  }
 
     let valNome, valsobreNome, valdtNascimento, valEmail;
 
@@ -99,6 +139,7 @@ export class UsuarioComponent implements OnInit {
 
       }, err => {
       });
+
 
 
     this.router.navigateByUrl('/login').then(e => {

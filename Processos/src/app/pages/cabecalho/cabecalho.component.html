@@ -18,20 +18,11 @@
             Consultar
           </a>
         </li>
-<!-- 
-        <li class="nav-item">
-          <a  class="nav-link" >
-            Dicionário Jurídico
-          </a>
-        </li> -->
-
-
-
       </ul>
 
       <ul class="nav justify-content-md">
         <li class="nav-item">
-          <h6>Bem vindo: {{usuario.nome + " "}} {{usuario.sobreNome}}</h6>
+          <h6>Bem vindo: <a style="color: inherit;" [routerLink]="['/usuario/user', usuario.id]" >{{usuario.nome + " "}} {{usuario.sobreNome}}</a></h6>
          </li>
       </ul>
 

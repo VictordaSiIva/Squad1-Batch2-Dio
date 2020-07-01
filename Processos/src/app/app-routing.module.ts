@@ -18,6 +18,10 @@ const routes: Routes = [
     component: UsuarioComponent
   },
   {
+    path: 'usuario/user/:Id',
+    component: UsuarioComponent
+  },
+  {
     path: 'menu',
     component: MenuComponent
   },

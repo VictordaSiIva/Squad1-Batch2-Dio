@@ -11,7 +11,7 @@ namespace Api.Data.Collections
             string nome,
             string sobreNome,
             string senha,
-            DateTime dataNascimento,
+            DateTime dtNascimento,
             string email,
             ETipoUsuario tipoUsuario            
             )
@@ -21,7 +21,7 @@ namespace Api.Data.Collections
             this.Nome = nome;
             this.SobreNome = sobreNome;
             this.Senha = senha;
-            this.DataNascimento = dataNascimento;
+            this.DtNascimento = dtNascimento;
             this.Email = email;
             this.TipoUsuario = tipoUsuario;
             
@@ -33,7 +33,7 @@ namespace Api.Data.Collections
 
         public string SobreNome { get; set; }
         public string Senha { get; set; }
-        public DateTime DataNascimento { get; set; }
+        public DateTime DtNascimento { get; set; }
         public string Email { get; set; }
         public ETipoUsuario TipoUsuario { get; set; }
     }
