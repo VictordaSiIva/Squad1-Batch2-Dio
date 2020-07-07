@@ -26,7 +26,7 @@ export class ProcessoComponent implements OnInit {
   clientes: Usuario[] = [];
   ProcessoForm: FormGroup;
 
-  regex: any = /^$|\s+/ ;
+  regex: any = /^\s*$/ ;
 
   processo: Processos = {
     id: '',
@@ -127,8 +127,7 @@ export class ProcessoComponent implements OnInit {
     valLinkProcesso = this.regex.test(this.processo.linkProcesso);
     valdataDecisao = this.regex.test(this.processo.dataDecisao);
 
-    if(valNomecliente === true ||
-      this.processo.nomeCliente === null ||
+    if(
       valdescricao === true ||
       this.processo.descricao == null ||
       valproximoPasso === true ||

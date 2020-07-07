@@ -98,7 +98,7 @@ this.todosProcessos();
   }
 
   confirmDelete(id: string) {
-    const isDeleting = confirm('Você realmente deseja apagar este aluno ?');
+    const isDeleting = confirm('Você realmente deseja apagar este cliente ?');
     if (!isDeleting) {
       return;
     }
@@ -113,7 +113,7 @@ this.todosProcessos();
       });
 
     window.setTimeout(() => {
-        this.toastr.success('Processo excluido com sucesso', 'Aluno');
+        this.toastr.success('Processo excluido com sucesso', 'Cliente');
         this.rerender();
         this.todosProcessos();
 

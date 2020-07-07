@@ -8,19 +8,21 @@
         [dtOptions]="dtOptionsProcesso" [dtTrigger]="dtTriggerProcesso">
             <thead>
               <tr style="color: #EAB562 ;" class="bg-warning text-center" >
-                <th>Número</th>
+                <th>link do Processo</th>
                 <th>Cliente</th>
                 <th>Descrição</th>
-                <th>Data</th>
+                <th>Proximo Passo</th>
+                <th>Data</th>                
                 <th *ngIf="tipoUsuario === 1"  >Ações</th>
               </tr>
             </thead>
 
             <tbody>
               <tr class="text-center" *ngFor="let processo of processos">
-                <td>{{processo.numProcesso}}</td>
+                <td><a href="{{processo.linkProcesso}}">{{processo.linkProcesso}}</a></td>
                 <td>{{processo.nomeCliente}}</td>
                 <td>{{processo.descricao}}</td>
+                <td>{{processo.proximoPasso}}</td>
                 <td>{{processo.dataDecisao | date: 'dd/MM/yyyy' }}</td>
                 <td *ngIf="tipoUsuario === 1" class="colIcons">
                 <span type="button" [routerLink]="['/processo', processo.id]" class="btn btn-outline-info"><i class="icon-pencil"></i></span>&nbsp;&nbsp;

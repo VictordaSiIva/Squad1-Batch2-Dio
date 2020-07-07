@@ -144,7 +144,14 @@ export class UsuarioComponent implements OnInit {
 
     this.router.navigateByUrl('/login').then(e => {
       if (e) {
+        if(!this.Id)
+        {
         this.toastr.success('Usuario cadastrado com sucesso!');
+        }
+        else
+        {
+          this.toastr.success('Usuario atualizado com sucesso!');
+        }
       } else {
         console.log("Navigation has failed!");
       }
